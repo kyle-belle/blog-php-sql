@@ -3,6 +3,9 @@
 	require './config/config.php';
 	require './config/db.php';
 
+	$msg = '';
+	$msgclass = '';
+
 	if(isset($_POST['submit'])){
 		$title = mysqli_real_escape_string($connection, htmlspecialchars($_POST['title']));
 		$author = mysqli_real_escape_string($connection, htmlspecialchars($_POST['author']));
